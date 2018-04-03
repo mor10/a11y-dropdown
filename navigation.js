@@ -29,6 +29,15 @@ try {
 } catch ( e ) {}
 
 /**
+ * Add aria-describedby to current menu item if any.
+ */
+function currentPage() {
+	let currentPage = siteNavigation.querySelector( '.current_page_item, .current_menu_item' );
+	currentPage.firstElementChild.setAttribute( 'aria-describedby', 'current' );
+}
+currentPage();
+
+/**
  * Main navigation handler.
  */
 
