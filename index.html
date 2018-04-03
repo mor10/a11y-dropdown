@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype for an accessible drop-down menu for WordPress</title>
+	<link rel='stylesheet' href='style.css' type='text/css' media='all' />
+	<script type='text/javascript' src='navigation.js' defer></script>
+</head>
+
+<body>
+	<header id="masthead" class="site-header">
+		<nav id="site-navigation" class="main-navigation" aria-label="site">
+			<button class="menu-toggle hidden" aria-controls="primary-menu" aria-expanded="false" hidden>Primary Menu</button>
+			<div id="primary-menu" class="menu">
+				<ul>
+					<li class="page_item page-item-703">
+						<a href="http://ptsk.test:8888/blog/">Blog</a>
+					</li>
+					<li class="page_item page-item-701">
+						<a href="http://ptsk.test:8888/front-page/">Front Page</a>
+					</li>
+					<li class="page_item page-item-2">
+						<a href="http://ptsk.test:8888/sample-page/">Sample Page</a>
+					</li>
+					<li class="page_item page-item-5 page_item_has_children">
+						<a href="http://ptsk.test:8888/about/">About The Tests</a>
+						<ul class='children'>
+							<li class="page_item page-item-1133">
+								<a href="http://ptsk.test:8888/about/page-image-alignment/">Page Image Alignment</a>
+							</li>
+							<li class="page_item page-item-1134">
+								<a href="http://ptsk.test:8888/about/page-markup-and-formatting/">Page Markup And Formatting</a>
+							</li>
+							<li class="page_item page-item-501">
+								<a href="http://ptsk.test:8888/about/clearing-floats/">Clearing Floats</a>
+							</li>
+							<li class="page_item page-item-155">
+								<a href="http://ptsk.test:8888/about/page-with-comments/">Page with comments</a>
+							</li>
+							<li class="page_item page-item-156">
+								<a href="http://ptsk.test:8888/about/page-with-comments-disabled/">Page with comments disabled</a>
+							</li>
+						</ul>
+					</li>
+					<li class="page_item page-item-174 page_item_has_children">
+						<a href="http://ptsk.test:8888/level-1/">Level 1</a>
+						<ul class='children'>
+							<li class="page_item page-item-173 page_item_has_children">
+								<a href="http://ptsk.test:8888/level-1/level-2/">Level 2</a>
+								<ul class='children'>
+									<li class="page_item page-item-172">
+										<a href="http://ptsk.test:8888/level-1/level-2/level-3/">Level 3</a>
+									</li>
+									<li class="page_item page-item-746">
+										<a href="http://ptsk.test:8888/level-1/level-2/level-3a/">Level 3a</a>
+									</li>
+									<li class="page_item page-item-748">
+										<a href="http://ptsk.test:8888/level-1/level-2/level-3b/">Level 3b</a>
+									</li>
+								</ul>
+							</li>
+							<li class="page_item page-item-742">
+								<a href="http://ptsk.test:8888/level-1/level-2a/">Level 2a</a>
+							</li>
+							<li class="page_item page-item-744">
+								<a href="http://ptsk.test:8888/level-1/level-2b/">Level 2b</a>
+							</li>
+						</ul>
+					</li>
+					<li class="page_item page-item-146">
+						<a href="http://ptsk.test:8888/lorem-ipsum/">Lorem Ipsum</a>
+					</li>
+					<li class="page_item page-item-733">
+						<a href="http://ptsk.test:8888/page-a/">Page A</a>
+					</li>
+					<li class="page_item page-item-735">
+						<a href="http://ptsk.test:8888/page-b/">Page B</a>
+					</li>
+					</ul>
+				</div>
+			<div id="current" class="current-prompt hidden"></div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+</body>

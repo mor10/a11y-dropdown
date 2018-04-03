@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+## Main navigation menu
+--------------------------------------------------------------*/
+.main-navigation {
+	display: block;
+	margin: 0 auto;
+	padding: 0 1em;
+	max-width: 42.5rem;
+	font-family: sans-serif;
+}
+
+.main-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	margin-left: 1em;
+}
+
+.main-navigation ul ul ul {
+	top: 0;
+}
+
+.main-navigation ul .hidden {
+	display: none;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	margin: 1px;
+	padding: .25em 0;
+	text-decoration: none;
+	border: 1px solid grey;
+}
+
+.main-navigation a:hover {
+	color: white;
+	background-color: hsl(0, 0%, 25%);
+}
+
+@media screen and (max-width: 35em) {
+	/* Narrow viewport menu. */
+	.menu-toggle {
+		margin: 0 auto;
+	}
+
+	.menu-toggle,
+	.main-navigation.toggled ul {
+		display: block;
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 35em) {
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.main-navigation a {
+		padding: .25em .5em;
+	}
+
+	.main-navigation ul ul {
+		display: none;
+		margin-left: 0;
+		position: absolute;
+		top: 100%;
+		float: left;
+		z-index: 1;
+		background: white;
+	}
+
+	.main-navigation ul li:hover > ul,
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		display: block;
+	}
+
+	.main-navigation ul ul a {
+		width: 200px;
+	}
+
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		
+	}
+
+	.main-navigation ul ul ul {
+		left: 100%;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.main-navigation ul ul.toggled {
+	display: block;
+}
