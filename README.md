@@ -5,6 +5,8 @@ This project aims to create a prototype for a more accessible drop-down menu exp
 
 This repository holds a prototype of a standard WordPress primary navigation menu in an HTML file. 
 
+Demo at [CodePen](https://codepen.io/mor10/pen/mxjRjj).
+
 ### Problem
 The challenge with most primary navigation menus in WordPress themes including the default themes is for horizontal menus, keyboard navigation requires the user to navigate through all sub-menus to get through the full menu. While this can be seen as an acceptable trade-off for smaller menus, it is not ideal, and it becomes a major issue in larger menus.
 

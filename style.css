@@ -96,11 +96,6 @@
 		width: 200px;
 	}
 
-	.main-navigation ul ul li:hover > ul,
-	.main-navigation ul ul li.focus > ul {
-		
-	}
-
 	.main-navigation ul ul ul {
 		left: 100%;
 	}
